@@ -152,6 +152,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;b&gt;Drivers&lt;/b&gt;&lt;p&gt;</description>
 <packages>
 <package name="SOIC127P620X175-8N">
 <wire x1="-1.9812" y1="1.651" x2="-1.9812" y2="2.159" width="0.1524" layer="51"/>

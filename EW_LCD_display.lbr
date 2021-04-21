@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -152,6 +152,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;b&gt;LCD Display Parts&lt;/b&gt;&lt;p&gt;</description>
 <packages>
 <package name="LCD-I2C-CONVERTER">
 <description>&lt;b&gt;I2C Bus to 4-Bit Parallel LCD Interface&lt;/b&gt; with LED backlight driver</description>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -70,7 +70,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>&lt;b&gt;All Devices from B2 Spice parts library&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;74 Logic Series &lt;/b&gt;&lt;p&gt;
  &lt;author&gt;Created by Beige Bag Software (mostly T. Nguyen)</description>
 <packages>
 <package name="SO16">

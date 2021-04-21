@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -152,6 +152,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;b&gt;Capacitors&lt;/b&gt;&lt;p&gt;</description>
 <packages>
 <package name="CAPAE1030X1400N">
 <smd name="1" x="-4.064" y="0" dx="4.1656" dy="1.1938" layer="1"/>

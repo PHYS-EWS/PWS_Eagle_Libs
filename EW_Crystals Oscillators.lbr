@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -72,6 +72,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;b&gt;Crystals and Oscillators&lt;/b&gt;&lt;p&gt;</description>
 <packages>
 <package name="MCSJK-3N-8.00-3.3-50-B">
 <smd name="4" x="-1.25" y="0.95" dx="1.7" dy="1.4" layer="1"/>

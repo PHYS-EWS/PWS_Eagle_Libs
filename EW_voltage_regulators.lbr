@@ -154,6 +154,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;b&gt;Voltage Regulators : Linear and Switchers&lt;/b&gt;&lt;p&gt;</description>
 <packages>
 <package name="SOT-223">
 <description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;</description>

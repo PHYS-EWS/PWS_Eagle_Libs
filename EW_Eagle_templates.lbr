@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -75,6 +75,7 @@
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
 <library>
+<description>&lt;b&gt;Templates, A3/A4 Title blocks &lt;/b&gt;&lt;p&gt;</description>
 <packages>
 <package name="TITLE_BLOCK_LAYOUT">
 <text x="1.27" y="15.24" size="1.778" layer="48">UNIVERSITY OF STRATHCLYDE 
