@@ -35191,6 +35191,32 @@ LORLIN - Rotary Coded Switch, BCK Series, Panel, 16 Position, 50 V, Hexadecimal,
 </device>
 </devices>
 </deviceset>
+<deviceset name="31-XX-JMTEST" prefix="S" uservalue="yes">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="TS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B3F-31XX">
+<connects>
+<connect gate="1" pin="P" pad="1"/>
+<connect gate="1" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:27487/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="B3F-3100" constant="no"/>
+<attribute name="OC_FARNELL" value="959704" constant="no"/>
+<attribute name="OC_NEWARK" value="36M3582" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
