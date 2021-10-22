@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="11" fill="1" visible="no" active="no"/>
@@ -8432,6 +8432,16 @@ grid 45 mm, diameter 18 mm</description>
 <rectangle x1="20.32" y1="-0.381" x2="21.209" y2="0.381" layer="21"/>
 <rectangle x1="-21.209" y1="-0.381" x2="-20.32" y2="0.381" layer="21"/>
 </package>
+<package name="SPLIT_CAP1206">
+<smd name="P$1" x="0.7" y="0.3" dx="0.7" dy="1" layer="1" rot="R90"/>
+<smd name="P$2" x="0.7" y="1.5" dx="0.7" dy="1" layer="1" rot="R90"/>
+<smd name="P$3" x="3.7" y="1.5" dx="0.7" dy="1" layer="1" rot="R90"/>
+<smd name="P$4" x="3.7" y="0.3" dx="0.7" dy="1" layer="1" rot="R90"/>
+<wire x1="0.127" y1="-0.127" x2="0.127" y2="1.9304" width="0.127" layer="21"/>
+<wire x1="0.127" y1="1.9304" x2="4.2926" y2="1.9304" width="0.127" layer="21"/>
+<wire x1="4.2926" y1="-0.0762" x2="4.2926" y2="1.9304" width="0.127" layer="21"/>
+<wire x1="4.2926" y1="-0.127" x2="0.127" y2="-0.127" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="RC-MASTER-SMD_R0603MP" urn="urn:adsk.eagle:package:15662272/2" type="model">
@@ -10731,10 +10741,19 @@ grid 45 mm, diameter 18 mm</description>
 <symbol name="CAP_1206">
 <text x="-2.413" y="1.778" size="1.27" layer="95">&gt;NAME</text>
 <text x="-3.175" y="-3.048" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="P$1" x="-3.81" y="0" visible="off" length="short" direction="pas"/>
-<pin name="P$2" x="3.81" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P$1" x="-3.81" y="5.08" visible="off" length="short" direction="pas"/>
+<pin name="P$2" x="-3.81" y="0" visible="off" length="short" direction="pas"/>
 <rectangle x1="0.635" y1="-1.27" x2="1.27" y2="1.27" layer="94"/>
 <rectangle x1="-1.27" y1="-1.27" x2="-0.635" y2="1.27" layer="94"/>
+<rectangle x1="-1.27" y1="3.556" x2="-0.635" y2="6.096" layer="94"/>
+<rectangle x1="0.635" y1="0" x2="1.27" y2="2.54" layer="94"/>
+<pin name="P$3" x="3.81" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P$4" x="3.556" y="5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<rectangle x1="-1.27" y1="0" x2="-0.635" y2="2.54" layer="94"/>
+<rectangle x1="0.635" y1="0" x2="1.27" y2="2.54" layer="94"/>
+<rectangle x1="0.635" y1="1.778" x2="1.27" y2="4.318" layer="94"/>
+<rectangle x1="-1.27" y1="1.27" x2="-0.635" y2="3.81" layer="94"/>
+<rectangle x1="0.635" y1="3.81" x2="1.27" y2="6.35" layer="94"/>
 </symbol>
 <symbol name="CAPH">
 <pin name="C2" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
@@ -21090,6 +21109,25 @@ for power line</description>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 <attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPLIT_CAP1206" prefix="C" uservalue="yes">
+<description>Used in Certain LDOs to monitor the Voltage present on the output</description>
+<gates>
+<gate name="G$1" symbol="CAP_1206" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPLIT_CAP1206">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
